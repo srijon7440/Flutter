@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_begins/stack.dart';
+import 'grid.dart';
 import 'home.dart';
 import 'input.dart';
 import 'img.dart';
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     title: 'Welcome',
-    home: Imagee(),
+    home: Stackk(),
     );
   }
 }
