@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_begins/alert.dart';
 import 'package:flutter_begins/stack.dart';
 import 'grid.dart';
 import 'home.dart';
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
     title: 'Welcome',
-    home: Stackk(),
+    home: Alertt(),
     );
   }
 }
