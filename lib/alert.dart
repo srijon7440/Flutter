@@ -116,58 +116,60 @@ class Alertt extends StatelessWidget {
           ),
         ),
       ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Container(
-                color: Colors.black87,
-                height: screenSize.height*0.5,
-                width: screenSize.width*0.5,
-                child: Image.asset('asset/cv.png'),
+      body: SingleChildScrollView(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Container(
+                  color: Colors.black87,
+                  height: screenSize.height*0.5,
+                  width: screenSize.width*0.5,
+                  child: Image.asset('asset/cv.png'),
+                ),
               ),
-            ),
-            Text(
-                'Stand Up My Vanguard!!',
-              style: TextStyle(
-                fontSize: screenSize.width>600? 40:20
+              Text(
+                  'Stand Up My Vanguard!!',
+                style: TextStyle(
+                  fontSize: screenSize.width>600? 40:20
+                ),
               ),
-            ),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink.shade900,
-                  foregroundColor: Colors.white,
-                ),
-                onPressed: (){
-              customizeAlert();
-            }, child: Text('Alert!')),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink.shade900,
-                  foregroundColor: Colors.white,
-                ),
-                onPressed: (){
-              iconAlert();
-            }, child: Text('Greetings')),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink.shade900,
-                  foregroundColor: Colors.white,
-                ),
-                onPressed: (){
-              soulBlast();
-            }, child: Text('Soul Blast')),
-            ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.pink.shade900,
-                  foregroundColor: Colors.white,
-                ),
-                onPressed: (){
-              showDamageZone();
-            }, child: Text('Damage Zone')),
-          ],
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.pink.shade900,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: (){
+                customizeAlert();
+              }, child: Text('Alert!')),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.pink.shade900,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: (){
+                iconAlert();
+              }, child: Text('Greetings')),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.pink.shade900,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: (){
+                soulBlast();
+              }, child: Text('Soul Blast')),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.pink.shade900,
+                    foregroundColor: Colors.white,
+                  ),
+                  onPressed: (){
+                showDamageZone();
+              }, child: Text('Damage Zone')),
+            ],
+          ),
         ),
       ),
     );
