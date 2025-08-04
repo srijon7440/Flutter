@@ -106,6 +106,7 @@ class Alertt extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.black87,
+        foregroundColor: Colors.white,
         title: Text(
           "Vanguard Alert",
           style: TextStyle(

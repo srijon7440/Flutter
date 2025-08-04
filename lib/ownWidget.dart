@@ -8,16 +8,23 @@ class Ownwidgett extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.brown,
+        title: Text(
+          "Vanguard Stack",
+          style: TextStyle(
+            backgroundColor: Colors.transparent,
+            color: Colors.red.shade200,
+            fontWeight: FontWeight.bold,
+            fontSize: 20,
+          ),
+        ),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            margin: EdgeInsets.all(10),
-            decoration: BoxDecoration(
-              color: Colors.grey,
-              borderRadius: BorderRadius.circular(24)
-            ),
-            child: Column(
+
+            Column(
               children: [
                 SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
@@ -40,7 +47,7 @@ class Ownwidgett extends StatelessWidget {
                 ),
               ],
             ),
-          )
+
         ],
       ),
     );
