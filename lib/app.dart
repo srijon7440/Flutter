@@ -2,7 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_begins/Assignments/ass1.dart';
 import 'package:flutter_begins/Assignments/exam1.dart';
 import 'package:flutter_begins/alert.dart';
+import 'package:flutter_begins/apps/calculator.dart';
 import 'package:flutter_begins/apps/countingApp.dart';
+import 'package:flutter_begins/apps/moneyManager.dart';
+import 'package:flutter_begins/apps/water_Meter.dart';
 import 'package:flutter_begins/drwaer.dart';
 import 'package:flutter_begins/ownWidget.dart';
 import 'package:flutter_begins/route.dart';
@@ -62,15 +65,17 @@ class MyApp extends StatelessWidget {
           )
       ),
     title: 'Welcome',
-    // initialRoute: '/routee',
-    //   routes: {
-    //     '/Drawer':(context)=>Drawerr(),
-    //     '/Alert':(context)=>Alertt(),
-    //     '/ownwidget':(context)=>Ownwidgett(),
-    //     '/stack':(context)=>Stackk(),
-    //     '/routee':(context)=>Routee()
-    //   },
-      home: Counter(),
+    initialRoute:  '/MoneyManager',
+      routes: {
+        '/Drawer':(context)=>Drawerr(),
+        '/Alert':(context)=>Alertt(),
+        '/ownwidget':(context)=>Ownwidgett(),
+        '/stack':(context)=>Stackk(),
+        '/routee':(context)=>Routee(),
+        '/Calculator':(context)=>CalculatorApp(),
+        '/WaterMeter':(context)=>WaterMeter(),
+        '/MoneyManager':(context)=>MoneyManager()
+      },
     );
   }
 }
